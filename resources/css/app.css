@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-cream: #fdfbf7;
+        --color-sage: #e5c4b3;
+        --color-leaf: #d85a38;
+        --color-clay: #a84830;
+        --color-bark: #3c2a21;
+        --color-ink: #3c2a21;
+    }
+
+    body {
+        @apply bg-cream text-ink antialiased;
+        background-image:
+            radial-gradient(circle at 12% 18%, rgba(216, 90, 56, 0.1), transparent 32%),
+            radial-gradient(circle at 88% 12%, rgba(229, 196, 179, 0.35), transparent 28%),
+            radial-gradient(circle at 80% 80%, rgba(60, 42, 33, 0.06), transparent 35%);
+        background-attachment: fixed;
+    }
+
+    ::selection {
+        background: rgba(216, 90, 56, 0.35);
+        color: #fdfbf7;
+    }
+}
+
+@layer components {
+    .glass-panel {
+        @apply border border-sage/40 bg-cream/85 shadow-soft backdrop-blur-xl;
+    }
+
+    .auth-card {
+        @apply glass-panel rounded-3xl px-6 py-8 sm:px-8;
+    }
+
+    .chat-scroll::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chat-scroll::-webkit-scrollbar-thumb {
+        background: rgba(216, 90, 56, 0.35);
+        border-radius: 999px;
+    }
+
+    .chat-scroll::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .orb {
+        @apply pointer-events-none absolute rounded-full blur-3xl;
+        background: radial-gradient(circle, rgba(216, 90, 56, 0.2), transparent 70%);
+    }
+}

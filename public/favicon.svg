@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E87555"/>
+      <stop offset="1" stop-color="#A84830"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#FDFBF7"/>
+  <rect x="5" y="5" width="54" height="54" rx="15" fill="url(#bg)"/>
+  <circle cx="32" cy="32" r="8" fill="#FDFBF7"/>
+  <circle cx="32" cy="32" r="3.5" fill="#D85A38"/>
+  <g fill="#FDFBF7">
+    <rect x="29.5" y="12" width="5" height="10" rx="2.5"/>
+    <rect x="29.5" y="42" width="5" height="10" rx="2.5"/>
+    <rect x="42" y="29.5" width="10" height="5" rx="2.5"/>
+    <rect x="12" y="29.5" width="10" height="5" rx="2.5"/>
+    <rect x="41.1" y="15.3" width="5" height="10" rx="2.5" transform="rotate(45 43.6 20.3)"/>
+    <rect x="17.9" y="38.7" width="5" height="10" rx="2.5" transform="rotate(45 20.4 43.7)"/>
+    <rect x="38.7" y="41.1" width="10" height="5" rx="2.5" transform="rotate(45 43.7 43.6)"/>
+    <rect x="15.3" y="17.9" width="10" height="5" rx="2.5" transform="rotate(45 20.3 20.4)"/>
+  </g>
+</svg>
